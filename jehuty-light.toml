@@ -1,0 +1,76 @@
+[colors]
+# Jehuty Light theme for WezTerm
+# Usage: Add this to your wezterm.toml config or reference it as a color scheme
+
+# The default text color
+foreground = "#212529"
+# The default background color  
+background = "#ffffff"
+
+# Overrides the cell background color when the current cell is occupied by the cursor
+cursor_bg = "#0d6efd"
+# Overrides the text color when the current cell is occupied by the cursor
+cursor_fg = "#ffffff"
+# Specifies the border color of the cursor when the cursor style is set to Block
+cursor_border = "#0d6efd"
+
+# The color of the scrollbar "thumb"; the portion that represents the current viewport
+scrollbar_thumb = "#a3a3a3"
+
+# The color of the split lines between panes
+split = "#e5e7eb"
+
+ansi = [
+  "#000000", # black
+  "#dc3545", # red  
+  "#047857", # green
+  "#ffc107", # yellow
+  "#0d6efd", # blue
+  "#6610f2", # magenta
+  "#17a2b8", # cyan
+  "#212529", # white
+]
+
+brights = [
+  "#495057", # bright black
+  "#f85c70", # bright red
+  "#10b981", # bright green  
+  "#ffcd39", # bright yellow
+  "#3d8bfd", # bright blue
+  "#7c3aed", # bright magenta
+  "#20c997", # bright cyan
+  "#000000", # bright white
+]
+
+[colors.indexed]
+# Arbitrary colors of the palette in the range from 16 to 255
+16 = "#f8f9fa"
+17 = "#e9ecef"
+18 = "#6c757d"
+19 = "#495057"
+20 = "#6f42c1"
+
+# Since: 20220319-142410-0fcdea07
+# When the IME, a dead key or a leader key are being processed and are effectively
+# holding input pending the result of input composition, change the cursor
+# to this color to give a visual cue about the compose state.
+compose_cursor = "#17a2b8"
+
+[colors.selection]
+# The color of the background in the selection
+background = "#0d6efd44"
+# The foreground color of the selection
+foreground = "#212529"
+
+[colors.copy_mode]
+# The color of the active text in copy mode
+active_highlight_bg = { Color = "#17a2b8" }
+# The color of the inactive text in copy mode  
+inactive_highlight_bg = { Color = "#a3a3a3" }
+
+[colors.quick_select]
+# The color of the quick select highlight
+label_bg = { Color = "#0d6efd" }
+label_fg = { Color = "#ffffff" }
+match_bg = { Color = "#17a2b8" }
+match_fg = { Color = "#ffffff" }
